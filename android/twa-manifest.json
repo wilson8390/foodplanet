@@ -1,0 +1,35 @@
+{
+  "packageId": "com.foodplanet.pos",
+  "host": "ais-dev-drlvtbrvisy53oc4oezfih-239895996827.us-east1.run.app",
+  "name": "Food Planet - Sistema de Restaurante",
+  "launcherName": "Food Planet",
+  "themeColor": "#E11D48",
+  "navigationColor": "#0C0A09",
+  "backgroundColor": "#0C0A09",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "/pwa-512x512.png",
+  "maskableIconUrl": "/pwa-512x512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "alias": "android",
+    "path": "./android.keystore"
+  },
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": false
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "/",
+  "name": "Food Planet - Sistema de Restaurante",
+  "short_name": "Food Planet",
+  "description": "Sistema de gestión para restaurante Food Planet: Punto de Venta (POS), control de inventario con recetas, comandas de cocina y hoja de menú.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c0a09",
+  "theme_color": "#e11d48",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/FOOD_PLANET_logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["food", "business", "productivity"]
+}

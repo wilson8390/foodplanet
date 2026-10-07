@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Planet - Sabores de otro planeta, sabores que te harán volver</title>
+    <meta name="description" content="Food Planet - Restaurante de comida rápida y almuerzos. Horario 11:00 AM a 21:00 PM. Calle Sgto. Mayor Diego Bazan #560. WhatsApp +591 62691600. Sabores de otro planeta, sabores que te harán volver." />
+    <meta property="og:title" content="Food Planet - Sabores de otro planeta, sabores que te harán volver" />
+    <meta property="og:description" content="Food Planet - Restaurante de comida rápida y almuerzos. Horario 11:00 AM a 21:00 PM. Calle Sgto. Mayor Diego Bazan #560. WhatsApp +591 62691600." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/FOOD_PLANET_logo.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#e11d48" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Food Planet" />
+    <script>
+      // Register Service Worker for Windows PWA Desktop App
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration note:', err);
+          });
+        });
+      }
+    </script>
+    <script>
+      // Chrome extension compatibility guard for window.fetch override
+      try {
+        let _currentFetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          get() {
+            return _currentFetch;
+          },
+          set(fn) {
+            _currentFetch = fn;
+          },
+          configurable: true,
+          enumerable: true,
+        });
+      } catch (e) {
+        // Silently continue if restricted
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Bebas+Neue&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-stone-950 text-stone-100 antialiased font-sans selection:bg-amber-500 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
